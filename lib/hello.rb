@@ -1,4 +1,4 @@
-def hello(array)
+def greeting(array)
     i = 0
     while i < array.length
       yield(array[i])
@@ -7,7 +7,7 @@ def hello(array)
     array
 end
 
-hello(["Tim", "Tom", "Jim"]) do |name|
+greeting(["Tim", "Tom", "Jim"]) do |name|
   if name.start_with?("T")
     puts "Hi, #{name}"
   end
